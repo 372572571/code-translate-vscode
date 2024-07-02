@@ -27,6 +27,11 @@ Code Translate 是一款纯粹的滑词翻译软件
 - 跳转第三方查询
   ![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_04.png?raw=true)
 
+## 本地构建
+
+1. 打包 `npm run publish`
+2. 安装 `npm run install`       
+
 ---
 ## License
 

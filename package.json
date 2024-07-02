@@ -12,8 +12,8 @@
     "code-translate",
     "code translate"
   ],
-  "version": "1.0.20",
-  "publisher": "w88975",
+  "version": "0.0.11",
+  "publisher": "uc1024",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.31.1"
@@ -22,17 +22,23 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onCommand:uc1024.code-translate"
   ],
   "main": "./extension.js",
   "browser": "./dist/web/extension.js",
   "contributes": {
-    "commands": []
+    "commands": [
+      {
+          "command": "uc1024.code-translate",
+          "title": "code.translate"
+      }
+  ]
   },
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "publish": "vsce package",
+    "publish": "vsce package", 
+    "install": "node install.js",
     "build:web": "webpack",
     "test:web": "npx vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ./dist/web/extension.js",
     "test": "node ./test/runTest.js"
